@@ -3,7 +3,9 @@ const operation = prompt('Enter operator');
 const secondNumber = +prompt('Enter second number');
 let result;
 
-if (isNaN(firstNumber)) {
+if (isNaN(firstNumber) && isNaN(secondNumber)) {
+    alert('Both numbers have incorrect types');
+} else if (isNaN(firstNumber)) {
     alert('First number is not a number');
 } else if (isNaN(secondNumber)) {
     alert('Second number is not a number');
